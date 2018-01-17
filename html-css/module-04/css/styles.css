@@ -136,9 +136,9 @@ p {
     color: #263555;
 }
 
-.items a::before {
+.items li::before {
     display: inline-block;
-    content: url(../img/Layer-83.jpg);
+    content: url(../img/Layer83.png);
     width: 20px;
     height: 20px;
     margin-right: 5px;
