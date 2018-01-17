@@ -133,10 +133,21 @@ p {
 
 .items li {
     line-height: 40px;
-   color: #263555;
+    color: #263555;
 }
 
 .items li::before {
+    display: inline-block;
+    content: url(../img/layer83.png);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15px;
+}
+
+.items a::before {
     display: inline-block;
     content: url(../img/layer83.png);
     width: 20px;
