@@ -138,7 +138,7 @@ p {
 
 .items a::before {
     display: inline-block;
-    content: url(../img/layer-83.jpg);
+    content: url(../img/Layer-83.jpg);
     width: 20px;
     height: 20px;
     margin-right: 5px;
