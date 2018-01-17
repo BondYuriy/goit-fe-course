@@ -136,7 +136,7 @@ p {
     color: #263555;
 }
 
-.items li::before {
+.items libefore {
     display: inline-block;
     content: url(../img/layer83.png);
     width: 20px;
