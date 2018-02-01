@@ -208,6 +208,7 @@ main {
 
 .box img {
     display: block;
+    width: 100%;
 }
 
 .box article {
