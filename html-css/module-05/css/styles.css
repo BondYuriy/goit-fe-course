@@ -151,6 +151,7 @@ main {
     position: absolute;
     left: 40px;
     bottom: 40px;
+    text-align: center;
 }
 
 .slider-button a {
@@ -180,12 +181,10 @@ main {
 
 .previous-slide::before {
     content: url(../img/layer-39-1.png);
-    padding-left: 25px;
 }
 
 .next-slide::after {
     content: url(../img/layer-39-2.png);
-    padding-left: 5px;
 }
 
 .gallery h2 {
@@ -199,11 +198,12 @@ main {
 .box {
     display: inline-block;
     margin-right: -4px;
+    width: 32%;
     position: relative;
 }
 
 .box:nth-of-type(n+2) {
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 .box img {
