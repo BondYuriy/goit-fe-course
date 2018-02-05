@@ -151,8 +151,14 @@ main {
     height: auto;
 }
 
-.picture-icon {
+.icon {
     display: inline-block;
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 38px;
+    height: 38px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -161,17 +167,7 @@ main {
     z-index: 1;
 }
 
-.icon {
-    background-image: url(../img/icon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: inline-block;
-    width: 38px;
-    height: 38px;
-}
-
-.gallery-item:hover .picture-icon {
+.gallery-item:hover .icon {
     opacity: 1;
 }
 

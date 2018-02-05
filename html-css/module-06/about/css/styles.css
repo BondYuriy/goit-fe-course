@@ -108,6 +108,7 @@ main {
 
 .main-content {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 50px;
     border-bottom: 1px;
     border-bottom-style: solid;
@@ -136,7 +137,6 @@ p {
 
 .profile-article {
     flex: 0 0 72%;
-    margin-right: 3%;
     
 }
 
@@ -195,11 +195,11 @@ p {
 
 .offer-article {
     display: flex;
+    justify-content: space-between;
 }
 
 .offer-content {
     flex: 0 0 72%;
-    margin-right: 3%;
 }
 
 .testimonial {
