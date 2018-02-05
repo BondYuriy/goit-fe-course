@@ -1,0 +1,400 @@
+body {
+    background-image: url(../img/page-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #4e5050;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: auto;
+}
+
+header {
+    position: relative;
+    padding: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item:nth-last-child(4) {
+    margin-right: 30%;
+}
+
+.menu-item a {
+    display: block;
+    color:  #ffffff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.menu-item>a {
+    line-height: 50px;
+}
+
+.logo {
+    display: inline-block;
+    height: 140px;
+    width: 140px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-family: 'Dorsa', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-decoration: none;
+    text-align: center; 
+    line-height: 140px;
+    color: #263555;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.submenu {
+    opacity: 0;
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.submenu:before {
+    content: "";
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-item:hover>.submenu {
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: #263555;
+}
+
+.submenu a {
+    display: block;
+    color: #6b7488;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 115px 60px 85px 60px;
+}
+
+.main-content {
+    display: flex;
+    padding-bottom: 50px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: #dedbdb;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #263555;
+    margin-bottom: 48px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 18px; 
+}
+
+.lead {
+    font-size: 15px;
+    color: #263555;
+    margin-bottom: 12px;
+}
+
+.profile-article {
+    flex: 0 0 72%;
+    margin-right: 3%;
+    
+}
+
+.principles-list {
+    flex: 0 0 25%;
+}
+
+.profile-article img {
+    float: left;
+    margin: 0px 25px 18px 0px;
+} 
+
+.profile-article p {
+    margin-bottom: 15px;
+}
+
+.profile-article p:last-child {
+    margin: 0;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.list li {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.list li:last-child {
+    margin-bottom: 0;
+}
+
+.list li::before {
+    flex: 0 0 30px;
+    display: inline-block;
+    counter-increment: list;
+    content: counter(list);
+    background-color: #38afe5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #4a99bd;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.list {
+    counter-reset: list;
+}
+
+.offer-article {
+    display: flex;
+}
+
+.offer-content {
+    flex: 0 0 72%;
+    margin-right: 3%;
+}
+
+.testimonial {
+    flex: 0 0 25%;
+}
+
+.offer-article h2 {
+    margin-bottom: 60px;
+}
+
+.offer-content p {
+    margin-bottom: 25px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items li {
+    flex: 0 0 50%;
+    line-height: 40px;
+    color: #263555;
+}
+
+.items li::before {
+    display: inline-block;
+    content: url(../img/Layer83.png);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15px;
+}
+
+.testimonial h2 {
+    margin-bottom: 20px;
+}
+
+.comment {
+    font-size: 15px;
+    color: #263555;
+    padding: 22px;
+    border: 1px solid #dfdcdc;
+    border-radius: 3px;
+    background-color: #fcfafa;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.comment::before {
+    content: ''; 
+    border: 25px solid transparent;
+    border-top: 25px solid #dfdcdc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;;
+}
+
+.comment::after {
+    content: '';
+    border: 25px solid transparent;
+    border-top: 25px solid #fcfafa; 
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%); 
+    bottom: -48px;
+}
+
+.comment-text {
+    font-size: 15px;
+    color: #263555;
+}
+
+.comment-text::before {
+    content: '\201c';
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.comment-text::after {
+    content: '\201d';
+    margin-left: 5px;
+}
+
+.testimonial p:nth-child(n+3) {
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    background-color: #30455b;
+    padding: 40px 0px;
+    margin-bottom: 25px;
+}
+
+.footer-list {
+    flex: 0 0 55%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    flex: 0 0 15%;
+}
+
+.footer-list li {
+    flex: 1 1 30%;
+}
+
+.footer-list a {
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contacts-text {
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px; 
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.contacts a {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.social-links a:last-child {
+    margin-right: 0;
+}
+
+.social-twitter {
+    background-image: url(../img/layer-51.png);
+}
+
+.social-facebook {
+    background-image: url(../img/layer-47.png);
+}
+
+.social-google {
+    background-image: url(../img/layer-48.png);
+}
+
+.social-instagram {
+    background-image: url(../img/layer-49.png);
+}
+
+.copyright span {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+.page-up {
+    display: inline-block;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: #38afe5;
+    text-align: center;
+    line-height: 25px;
+}
+
+.page-up::before {
+    content: url(../img/layer-38.png);
+}
