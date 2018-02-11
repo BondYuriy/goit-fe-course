@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Roboto Slab Regular';
+    src: url('../fonts/roboto-slab-latin-regular.woff') format('woff'),
+         url('../fonts/roboto-slab-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/montserrat-latin-regular.woff') format('woff'),
+         url('../fonts/montserrat-latin-regular.woff2') format('woff2');
+         font-weight: 400;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/montserrat-latin-700.woff') format('woff'),
+         url('../fonts/montserrat-latin-700.woff2') format('woff2');
+         font-weight: 700;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pt Serif Italic';
+    src: url('../fonts/pt-serif-latin-italic.woff') format('woff'),
+         url('../fonts/pt-serif-latin-italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Galada Regular';
+    src: url('../fonts/galada-latin-regular.woff') format('woff'),
+         url('../fonts/galada-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
