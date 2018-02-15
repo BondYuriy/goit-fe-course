@@ -99,14 +99,15 @@
             <section class="contacts-us">
                 <h2>CONTACT US</h2>
                 <form action="#">
-                    <input type="text" name="name" placeholder="name" required>
-                    
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="name" required>
+                        <span class="required-text">*This field is required.</span>
+                    </div>
                     <input type="email" name="email" placeholder="email">
                     <input type="text" name="subject" placeholder="subject">
                     <textarea name="message" cols="25" rows="10" placeholder="message"></textarea>
                     <button type="reset" value="clear">clear</button>
                     <button type="submit" value="send">send</button>
-                    <span class="required-text">*This field is required.</span>
                 </form>
             </section>
         </main>
