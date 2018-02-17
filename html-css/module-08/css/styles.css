@@ -138,24 +138,13 @@ h3 {
 
 .fa {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
+    border: 4px solid #ffffff;
     border-radius: 50%;
     position: absolute;
     right: 0;
     bottom: 0;
-}
-
-.fa::after {
-    content: '';
-    display: inline-block;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 1);
-    position: absolute;
-    right: -4px;
-    bottom: -4px;
 }
 
 .fa-tv {
