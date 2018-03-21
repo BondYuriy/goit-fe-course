@@ -1,7 +1,7 @@
 .wrapper {
-    min-width: 320px;
+    min-width: 20rem;
     margin: auto;
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
 }
 
 .header-wrapper {
@@ -9,38 +9,37 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 550px;
-    margin-bottom: 70px;
-    padding-top: 20px;
+    min-height: 34.375rem;
+    margin-bottom: 4.375rem;
+    padding-top: 1.25rem;
+}
+
+.container {
+    min-width: 20rem;
+    max-width: 58.75rem;
+    margin: auto;
 }
 
 .header {
-    display: flex; 
-    flex-direction: column-reverse;
+    display: flex;
     align-items: center;
-    margin-bottom: 35px;
-}
-
-@media (max-width: 767px) {
-    .identification {
-        margin-bottom: 120px;
-    }
+    margin-bottom: 2.1875rem;
 }
 
 .identification a {
     display: inline-block;
-    width: 90px;
-    height: 36px;
-    border: 2px solid rgba(255, 255, 255, 0);
-    border-radius: 18px;
+    width: 5.625rem;
+    height: 2.25rem;
+    border: 0.125rem solid rgba(255, 255, 255, 0);
+    border-radius: 1.125rem;
     color: #ffffff;
     text-align: center;
     text-transform: unset;
     text-decoration: none;
-    line-height: 32px; 
+    line-height: 2rem; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .identification a:hover {
@@ -55,47 +54,47 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .home-title {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
 }
 
 .home-text {
     display: block;
     width: 70%;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #ffffff;
-    font-size: 18px; 
+    font-size: 1.125rem; 
 }
 
 .home-button {
     display: block;
-    width: 280px;
-    height: 40px;
+    width: 17.5rem;
+    height: 2.5rem;
     margin: auto;
     background-color: #ff4e50;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     text-align: center;
-    line-height: 40px;
+    line-height: 2.5rem;
     color: #ffffff;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .home-button:hover {
@@ -105,28 +104,22 @@
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #333333;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .cards {
-    width: 68%;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-.card:not(:last-child) {
-    margin-bottom: 20px; 
+    margin-bottom: 1.875rem;
 }
 
 .card-imege {
     display: block;
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     position: relative;
 }
 
@@ -138,9 +131,9 @@ h3 {
 
 .fa {
     display: block;
-    width: 38px;
-    height: 38px;
-    border: 4px solid #ffffff;
+    width: 2.375rem;
+    height: 2.375rem;
+    border: 0.25rem solid #ffffff;
     border-radius: 50%;
     position: absolute;
     right: 0;
@@ -179,38 +172,52 @@ h3 {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #333333;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .card-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #666666;
     text-align: center;
 }
 
 .button {
     display: block;
-    width: 280px;
-    height: 40px;
+    width: 17.5rem;
+    height: 2.5rem;
     margin: auto;
-    border: 2px solid rgba(255, 78, 80, 0);
-    border-radius: 20px;
+    border: 0.125rem solid rgba(255, 78, 80, 0);
+    border-radius: 1.25rem;
     text-align: center;
-    line-height: 36px;
+    line-height: 2.25rem;
     color: #ff4e50;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .button:hover {
     border-color: rgba(255, 78, 80, 1)
+}
+
+@media (max-width: 767px) {
+    .identification {
+        margin-bottom: 7.5rem;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .card:not(:last-child) {
+        margin-bottom: 1.25rem; 
+    }
 }
 
 @media (min-width: 768px) {
@@ -218,59 +225,62 @@ h3 {
         background-image: url(../img/vector-smart-object.png);
         background-color: rgba(26, 25, 21, 0.2);
         background-blend-mode: overlay;
-        min-height: 700px;
+        min-height: 43.75rem;
         padding-top: 0;
     }
 
     .header {
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        padding: 50px 50px 0px 50px;
-        margin-bottom: 150px;
+        padding: 3.125rem 3.125rem 0px 3.125rem;
+        margin-bottom: 9.375rem;
     }
 
     .home-title {
         width: 63%;
         margin: auto;
-        margin-bottom: 20px;
-        font-size: 48px;
-        line-height: 62px;
+        margin-bottom: 1.25rem;
+        font-size: 3rem;
+        line-height: 3.875rem;
     }
 
     .home-text {
-        font-size: 24px;
-        margin-bottom: 30px;
+        font-size: 1.5rem;
+        margin-bottom: 1.875rem;
     }
 
     .home-button {
-        width: 225px;
-        font-size: 13px;
+        width: 14.0625rem;
+        font-size: 0.8125rem;
     }
 
     h3 {
-        margin-bottom: 35px;
+        margin-bottom: 2.1875rem;
     }
 
     .cards {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 60.5%;
     }
 
     .card {
         flex: 0 0 45%;
     }
 
-    .card:nth-last-child(2) {
-        margin-bottom: 0;
+    .button {
+        width: 12.1875rem;
+        font-size: 0.8125rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 939px) {
+    .cards {
+        width: 68%;
+        margin: auto;
     }
 
-    .button {
-        width: 195px;
-        font-size: 13px;
+    .card:nth-last-child(n+3) {
+        margin-bottom: 1.875rem;
     }
 }
 
@@ -282,22 +292,11 @@ h3 {
     }
 
     .header {
-        width: 940px;
-        margin: auto;
-        padding: 35px 0 0 0;
-        margin-bottom: 150px;
-    }
-
-    .cards {
-        width: 940px;
+        padding-top: 2.1875rem;
+        margin-bottom: 9.375rem;
     }
 
     .card {
         flex: 0 0 23%;
-        margin-bottom: 0px;
-    }
-
-    .card:nth-last-child(n+2) {
-        margin-bottom: 0;
     }
 }
