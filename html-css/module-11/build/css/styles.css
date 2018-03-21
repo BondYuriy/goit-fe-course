@@ -350,7 +350,7 @@ template {
 .section-header__title,
 .features__list,
 .features__title,
-.features .features__text,
+.features__text,
 .team__text,
 .team__list,
 .page-footer__copyright {
@@ -514,7 +514,7 @@ template {
 	margin-bottom: 1rem;
 }
 
-.features .features__text {
+.features__text {
 	font: 0.9375rem 'Roboto', sans-serif;
 	line-height: 1.5rem;
 	color: #999999;

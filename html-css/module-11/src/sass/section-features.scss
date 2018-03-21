@@ -1,65 +1,70 @@
-.section-header {
-  &__text {
+.section-header__text {
+  display: block;
+  font: 1.5rem 'Kaushan Script', cursive;
+  color: color("caption-color");
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-header__title {
+  @extend %reset-set;
+  font: 700 1.875rem 'Montserrat', sans-serif;
+  color: color("caption-color");
+  text-transform: uppercase;
+  text-align: center;
+  &::after {
     display: block;
-    font: 1.5rem 'Kaushan Script', cursive;
-    color: color("caption-color");
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  &__title {
-    @extend %reset-set;
-    font: 700 1.875rem 'Montserrat', sans-serif;
-    color: color("caption-color");
-    text-transform: uppercase;
-    text-align: center;
-    &::after {
-      display: block;
-      content: "";
-      width: 3.75rem;
-      height: 0.1875rem;
-      background-color: color("lightcoral");
-      margin: auto;
-      margin-top: 2.25rem;
-    }
+    content: "";
+    width: 3.75rem;
+    height: 0.1875rem;
+    background-color: color("lightcoral");
+    margin: auto;
+    margin-top: 2.25rem;
   }
 }
 
 .features {
   padding: 0rem 1.875rem;
   margin-bottom: 5.625rem;
-  &__header {
-    margin-bottom: 3.75rem;
+}
+
+.features__header {
+  margin-bottom: 3.75rem;
+}
+
+.features__list {
+  @extend %reset-set;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features__item {
+  flex: 0 0 31.6666%;
+  display: flex;
+  &:nth-last-child(n + 4) {
+    margin-bottom: 6.25rem;
   }
-  &__list {
-    @extend %reset-set;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  &__item {
-    flex: 0 0 31.6666%;
-    display: flex;
-    &:nth-last-child(n + 4) {
-      margin-bottom: 6.25rem;
-    }
-  }
-  &__info {
-    flex: 0 0 77%;
-  }
-  &__title {
-    @extend %reset-set;
-    font: 700 0.875rem 'Montserrat', sans-serif;
-    color: color("caption-color");
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-  .features__text {
-    @extend %reset-set;
-    font: 0.9375rem 'Roboto', sans-serif;
-    line-height: 1.5rem;
-    color: color("main-color");
-  }
+}
+
+.features__info {
+  flex: 0 0 77%;
+}
+
+.features__title {
+  @extend %reset-set;
+  font: 700 0.875rem 'Montserrat', sans-serif;
+  color: color("caption-color");
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.features__text {
+  @extend %reset-set;
+  font: 0.9375rem 'Roboto', sans-serif;
+  line-height: 1.5rem;
+  color: color("main-color");
 }
 
 .fa {
